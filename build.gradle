@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.Refi'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.40.0' // bener
+    testImplementation 'io.github.bonigarcia:webdrivermanager:6.3.3' //bener
+
+    testImplementation 'io.cucumber:cucumber-java:7.33.0' //bener
+    testImplementation 'io.cucumber:cucumber-junit:7.33.0' // bener
+
+    //JUnit 4
+    testImplementation 'junit:junit:4.13.2'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.14.1'
+}
+
+test {
+    useJUnit()
+}

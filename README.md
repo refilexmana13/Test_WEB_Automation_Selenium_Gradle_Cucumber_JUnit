@@ -8,4 +8,5 @@ Project automation ini dibuat menggunakan **Java**, **Selenium**, dan **Cucumber
  **Cucumber** - Untuk framework BDD (Behavior Driven   Development) dan menjalankan Test   
  **JUnit 4** - Sebagai Test Runner. 
  **WebDriverManager** - Untuk manajemen driver browser otomatis. 
+ 
  **Gradle** - Sebagai build tool. 

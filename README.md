@@ -4,7 +4,7 @@ Project automation ini dibuat menggunakan **Java**, **Selenium**, dan **Cucumber
 
 ## Praktikum ini dilakukan menggunakan = 
  **Java SDK 25.0.1**  
- **Selenium WebDriver** - Untuk kontrol browser. 
+ **Selenium WebDriver** - Untuk kontrol browser.  
  **Cucumber** - Untuk framework BDD (Behavior Driven   Development) dan menjalankan Test   
  **JUnit 4** - Sebagai Test Runner. 
  **WebDriverManager** - Untuk manajemen driver browser otomatis  

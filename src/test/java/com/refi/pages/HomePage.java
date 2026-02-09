@@ -15,9 +15,7 @@ public class HomePage {
         this.driver = driver;
     }
 
-    public void validateHomePage(){
-        WebElement productElement = driver.findElement(tshirtItem);
-        Assert.assertTrue(productElement.isDisplayed());
-        Assert.assertEquals("Sauce Labs Bolt T-Shirt",productElement.getText());
+    public String validateHomePage(){
+        return driver.findElement(tshirtItem).getText();
     }
 }

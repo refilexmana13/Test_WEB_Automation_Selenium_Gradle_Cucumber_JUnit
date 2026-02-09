@@ -7,6 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import com.refi.pages.LoginPage;
+import org.junit.Assert;
 
 public class LoginStepDef extends BaseTest {
     //attribut
@@ -40,11 +41,12 @@ public class LoginStepDef extends BaseTest {
     @Then("user sees error message {string}")
     public void userSeesErrorMessage(String errorMessage) {
         // code here
-        loginPage.validateErrorAppear(errorMessage);
+        Assert.assertTrue(loginPage.getPageSource().contains(errorMessage));
     }
 
     @And("User leaves the username field empty {string}")
     public void userLeavesTheUsernameFieldEmpty(String arg0) {
         // code here
+
     }
 }

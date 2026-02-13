@@ -35,11 +35,4 @@ jobs:
     - name: Excute Test
       run : ./gradlew clean test
       
-    - name: Archive test results
-      uses: actions/upload-artifact@v4.3.0
-      if: always() #always() # success() , failure(), canceled()
-        with:
-          name: cucumber reports
-          path: target/index.html  # Path to test reports
-      
 
